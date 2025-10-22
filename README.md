@@ -2,12 +2,11 @@
 Abgabe bis: Donnerstag, den {TT.MM.JJJJ}, um 14 Uhr
 
 ## Team und Zuordnung
-- Partner*in 1: {Name}, Matr.-Nr.: {MNR}
-- Partner*in 2: {Name}, Matr.-Nr.: {MNR}
-- Tutorium: {Nr/Name}
+- Partner*in 1: Abel Malzew, Matr.-Nr.: 447302
+- Partner*in 2: Mykhailo Volkov, Matr.-Nr.: 483217
+- Tutorium: 16
 
 ## Aufgabenübersicht und Punkte
-Tragt pro Aufgabe Thema, Teilaufgaben und Punkte ein. Nutzt die Checkliste zum Fortschritt.
 
 | Aufgabe | Thema                         | Punkte |
 |--------:|-------------------------------|-------:|
@@ -122,6 +121,74 @@ Mehr Details: siehe [junit.org](https://junit.org/).
   - Java: Formatierung via IDE/Spotless
   - Haskell: `fourmolu`/`ormolu`
   - Prolog: konsistenter Stil, Prädikats-Dokumentation
+
+## Git-Tutorial für Teamarbeit
+
+### Erste Schritte
+```bash
+# Repository klonen
+git clone {...}
+cd {...}
+
+# Aktuellen Status prüfen
+git status
+```
+
+### Effektiver Workflow
+1. **Neuen Branch erstellen für jede Aufgabe**:
+   ```bash
+   git checkout -b aufgabe/{NR}-{kurztitel}
+   ```
+
+2. **Regelmäßig committen mit aussagekräftigen Nachrichten**:
+   ```bash
+   git add src/java/progra25/blattXX/aufgabeYY/
+   git commit -m "feat: Implementiere Methode calculate() für Aufgabe XX.Y"
+   ```
+
+3. **Branch pushen**:
+   ```bash
+   git push -u origin aufgabe/{NR}-{kurztitel}
+   ```
+
+4. **Pull Request erstellen** auf GitHub:
+   - Gehe zu: https://github.com/username/repository/pulls
+   - Klicke "New pull request"
+   - Wähle deinen Branch und beschreibe die Änderungen
+
+5. **Code Review durch Partner*in**:
+   - Diskutiert Änderungen in den Kommentaren
+   - Nehmt Anpassungen vor, wenn nötig
+   - Merged erst nach beidseitiger Zustimmung
+
+6. **Nach dem Merge, lokales Repository aktualisieren**:
+   ```bash
+   git checkout main
+   git pull
+   ```
+
+### Häufige Git-Befehle
+- `git log --oneline`: Zeigt kompakte Commit-Historie
+- `git diff`: Zeigt Änderungen seit letztem Commit
+- `git stash`: Temporäres Speichern von Änderungen
+- `git pull --rebase`: Aktuelle Änderungen holen und eigene darauf anwenden
+
+### Konflikte lösen
+1. Bei Merge-Konflikten zeigt Git die betroffenen Dateien
+2. Öffne die Dateien und suche nach Markierungen wie:
+   ```
+   <<<<<<< HEAD
+   Deine Änderungen
+   =======
+   Änderungen aus dem anderen Branch
+   >>>>>>> branch-name
+   ```
+3. Bearbeite den Text, um beide Änderungen zu integrieren
+4. Füge die gelösten Dateien hinzu und schließe den Merge ab:
+   ```bash
+   git add <konfliktdatei>
+   git commit
+   ```
 
 ---
 
