@@ -1,24 +1,57 @@
-# Compiled class file
+# --- Java ---
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# --- Maven ---
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# --- Gradle ---
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# --- IntelliJ / Eclipse / VS Code ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+
+# --- Haskell ---
+.stack-work/
+dist/
+dist-*/
+dist-newstyle/
+cabal.project.local
+cabal.project.local~
+cabal.sandbox.config
+.HTF/
+*.tix
+*.prof
+*.eventlog
+
+# --- Prolog ---
+*.qlf
+
+# --- SWI cache or temp files (rare) ---
+*.swp
+*.swo
+
+# --- General ---
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.log
