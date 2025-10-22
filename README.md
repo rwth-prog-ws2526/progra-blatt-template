@@ -43,10 +43,6 @@ Beispiel for Java `src/`: `src/java/prograNN/blattNN/aufgabe01` (wichtig für Te
 
 ## Ausführen und Testen
 
-{Pick the language and stick with it:}
-
-CI runs the same checks on each push/PR (see [.github/workflows/tests.yml](../.github/workflows/tests.yml)).
-
 ### Java (standalone)
 
 Dieser Repo verwendet **JUnit 6** mit dem **JUnit Platform Console Launcher** – keine zusätzlichen Build-Tools nötig.
