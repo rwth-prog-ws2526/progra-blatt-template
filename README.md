@@ -15,7 +15,7 @@ Abgabe bis: Donnerstag, den {TT.MM.JJJJ}, um 14 Uhr
 
 ### Aufgaben
 
-#### Hausaufgabe {NR} — {Name}
+#### Aufgabe {NR} — {Name}
 - a) Werte der 10‑Bit‑Bitfolgen im Zweierkomplement → [docs/aufgabe07.md](docs/aufgabe07.md)
 - b) Java-Ausdrücke begründen (true) → [docs/aufgabe07.md](docs/aufgabe07.md)
 - Code:
