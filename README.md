@@ -1,4 +1,4 @@
-# Programmierung WiSe 25/26 — Übungsblatt {NR}
+# Programmierung WiSe 25/26 — Hausaufgabenblatt {NR}
 Abgabe bis: Donnerstag, den {TT.MM.JJJJ}, um 14 Uhr
 
 ## Team und Zuordnung
