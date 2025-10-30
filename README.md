@@ -1,5 +1,5 @@
-# Programmierung WiSe 25/26 — Übungsblatt 3
-Abgabe bis: Donnerstag, den 06.11.2025, um 14 Uhr
+# Programmierung WiSe 25/26 — Übungsblatt {NR}
+Abgabe bis: Donnerstag, den {TT.MM.JJJJ}, um 14 Uhr
 
 ## Team und Zuordnung
 - Partner*in 1: Abel Malzew, Matr.-Nr.: 447302
@@ -10,10 +10,19 @@ Abgabe bis: Donnerstag, den 06.11.2025, um 14 Uhr
 
 | Aufgabe | Thema                         | Punkte |
 |--------:|-------------------------------|-------:|
-| 01      | Überblickswissen                       |
-| 02      | Verifikation                       |
-| 04      | Verifikation                       |
-| 06      | Programmierung                       |
+| 01      | {Thema}                       | {..}   |
+| 02      | {Thema}                       | {..}   |
+
+### Aufgaben
+
+#### Hausaufgabe {NR} — {Name}
+- a) Werte der 10‑Bit‑Bitfolgen im Zweierkomplement → [docs/aufgabe07.md](docs/aufgabe07.md)
+- b) Java-Ausdrücke begründen (true) → [docs/aufgabe07.md](docs/aufgabe07.md)
+- Code:
+  - [src/java/de/rwth/aufgabe07/](src/java/aufgabe07/)
+  - [tests/](tests/)
+  - Haskell: [src/haskell/aufgabe03/](src/haskell/aufgabe03/)
+  - Prolog: [src/prolog/aufgabe03/](src/prolog/aufgabe03/)
 
 ## Repository-Struktur
 ```
