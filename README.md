@@ -5,24 +5,13 @@ Abgabe bis: Donnerstag, den {TT.MM.JJJJ}, um 14 Uhr
 - Partner*in 1: Abel Malzew, Matr.-Nr.: 447302
 - Partner*in 2: Mykhailo Volkov, Matr.-Nr.: 483217
 - Tutorium: 16
-
+Programmie
 ## Aufgabenübersicht und Punkte
 
-| Aufgabe | Thema                         | Punkte |
-|--------:|-------------------------------|-------:|
-| 01      | {Thema}                       | {..}   |
-| 02      | {Thema}                       | {..}   |
-
-### Aufgaben
-
-#### Hausaufgabe {NR} — {Name}
-- a) Werte der 10‑Bit‑Bitfolgen im Zweierkomplement → [docs/aufgabe07.md](docs/aufgabe07.md)
-- b) Java-Ausdrücke begründen (true) → [docs/aufgabe07.md](docs/aufgabe07.md)
-- Code:
-  - [src/java/de/rwth/aufgabe07/](src/java/aufgabe07/)
-  - [tests/](tests/)
-  - Haskell: [src/haskell/aufgabe03/](src/haskell/aufgabe03/)
-  - Prolog: [src/prolog/aufgabe03/](src/prolog/aufgabe03/)
+| Aufgabe | Thema                         | Punkte | Code noetig |
+|--------:|-------------------------------|--------|-------------|
+| 01      | {Thema}                       |  {..}  |     y/n     |
+| 02      | {Thema}                       |  {..}  |     y/n     |
 
 ## Repository-Struktur
 ```
@@ -37,7 +26,7 @@ Beispiel for Java `src/`: `src/java/prograNN/blattNN/aufgabe01` (wichtig für Te
 ## Konventionen
 - Pro Aufgabe:
   - Theorie: docs/aufgabe{NN}.md
-  - Code: src/{sprache}/aufgabe{NN}/…
+  - Code: src/{sprache}/progra25/aufgabe{NN}/…
 - Commit-Nachrichten exakt (feat, fix, docs, refactor, test).
 - Nutzt Branches und Pull Requests für Reviews (Opt.).
 
@@ -47,7 +36,9 @@ Beispiel for Java `src/`: `src/java/prograNN/blattNN/aufgabe01` (wichtig für Te
 
 Dieser Repo verwendet **JUnit 6** mit dem **JUnit Platform Console Launcher** – keine zusätzlichen Build-Tools nötig.
 
-- Falls JUnit Console Launcher nicht installiert ist, lade es zu `.tools/` (sollte beim `git clone` autoatisch erfolgen):
+<!-- Will be done automatically 
+
+- Falls JUnit Console Launcher nicht installiert ist, lade es zu `.tools/` (sollte beim `git clone` automatisch erfolgen):
 
 
 ```bash
@@ -63,8 +54,9 @@ Invoke-WebRequest -Uri "https://repo1.maven.org/maven2/org/junit/platform/junit-
   -OutFile ".\ .tools\junit-platform-console-standalone-$v.jar"
 
 ```
+-->
 
-Tests bei `tests/java/progra25/blattNN/aufgabeNN/AppTest.java` ablegen.
+Tests bei `tests/java/progra25/aufgabeNN/AppTest.java` ablegen.
 
 Tests lokal ausführen:
 1) Einmalig Skript ausführbar machen:
