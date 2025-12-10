@@ -5,7 +5,7 @@ Abgabe bis: Donnerstag, den {TT.MM.JJJJ}, um 14 Uhr
 - Partner*in 1: Abel Malzew, Matr.-Nr.: 447302
 - Partner*in 2: Mykhailo Volkov, Matr.-Nr.: 483217
 - Tutorium: 16
-Programmie
+
 ## Aufgabenübersicht und Punkte
 
 | Aufgabe | Thema                         | Punkte | Code noetig |
