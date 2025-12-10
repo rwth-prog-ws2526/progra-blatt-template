@@ -8,10 +8,10 @@
 
 ## Aufgabenübersicht und Punkte
 
-| Aufgabe | Thema                         | Punkte |
-|--------:|-------------------------------|-------:|
-| 01      | {Thema}                       | {..}   |
-| 02      | {Thema}                       | {..}   |
+| Aufgabe | Thema                         | Punkte | Code noetig |
+|--------:|-------------------------------|--------|-------------|
+| 01      | {Thema}                       |  {..}  |     y/n     |
+| 02      | {Thema}                       |  {..}  |     y/n     |
 
 ### Aufgaben
 
