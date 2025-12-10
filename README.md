@@ -1,5 +1,5 @@
 # Programmierung WiSe 25/26 — Übungsblatt {NR}
-Abgabe bis: Donnerstag, den {TT.MM.JJJJ}, um 14 Uhr
+
 
 ## Team und Zuordnung
 - Partner*in 1: Abel Malzew, Matr.-Nr.: 447302
