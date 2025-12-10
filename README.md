@@ -13,17 +13,6 @@
 | 01      | {Thema}                       |  {..}  |     y/n     |
 | 02      | {Thema}                       |  {..}  |     y/n     |
 
-### Aufgaben
-
-#### Aufgabe {NR} — {Name}
-- a) Werte der 10‑Bit‑Bitfolgen im Zweierkomplement → [docs/aufgabe07.md](docs/aufgabe07.md)
-- b) Java-Ausdrücke begründen (true) → [docs/aufgabe07.md](docs/aufgabe07.md)
-- Code:
-  - [src/java/de/rwth/aufgabe07/](src/java/aufgabe07/)
-  - [tests/](tests/)
-  - Haskell: [src/haskell/aufgabe03/](src/haskell/aufgabe03/)
-  - Prolog: [src/prolog/aufgabe03/](src/prolog/aufgabe03/)
-
 ## Repository-Struktur
 ```
 docs/                  # Theorie-Antworten, Begründungen, ggf. Beweise (eine Datei je Aufgabe)
@@ -41,50 +30,69 @@ Beispiel for Java `src/`: `src/java/prograNN/blattNN/aufgabe01` (wichtig für Te
 - Commit-Nachrichten exakt (feat, fix, docs, refactor, test).
 - Nutzt Branches und Pull Requests für Reviews (Opt.).
 
-## Ausführen und Testen
+## Vorbereiten
 
 ### Java (standalone)
+
+Die Arbeitsweise erfolgt nach der Logik "Tests First". 
+Es wird die Reiehe von shell Skripten ausgeführtm um die endliche Struktur zu erstellen.
+
+Man muss die Scripts aus der Wurzeldirectory abrufen.
+
+Zeurst aktiviere die Shell scripts fürs Ausführen:
+```sh
+chmod +x scripts/*
+```
+
+Stell sicher, dass die README.md richtig eingestellt ist (besonders die Aufgabentabelle) und starte Build von Projekt-Struktur :
+```sh
+./scripts/create_structure.sh
+```
+
+Stell sicher, dass die Logische Struktur von den Klassen richtig ist (ja, du musst die selbst erstellen). Dann:
+```sh
+./scripts/create_tests.sh
+```
+
+## Ausführen und Testen
 
 Dieser Repo verwendet **JUnit 6** mit dem **JUnit Platform Console Launcher** – keine zusätzlichen Build-Tools nötig.
 
 - Falls JUnit Console Launcher nicht installiert ist, lade es zu `.tools/` (sollte beim `git clone` autoatisch erfolgen):
 
+Nachdem Tests und Aufgaben vervollständigt wurden, führe das hier um die java Klassen zu kompilieren:
+```sh
+./scripts/build_start.sh
+```
+
+- Kompiliert alles unter `src/java/**` und `tests/java/**`
+
+Tests bei `tests/java/progra25/aufgabeNN/AppTest.java` ablegen (sind aber oben automatisch erstellt).
+
+Um die Tests auszuführen:
+
 
 ```bash
-mkdir -p .tools
-curl -sSL -o .tools/junit-platform-console-standalone-6.0.0.jar \
-  "https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/6.0.0/junit-platform-console-standalone-6.0.0.jar"
+# Alle Tests
+java -jar . tools/junit-platform-console-standalone-6.0.0.jar \
+  --classpath bin \
+  --scan-classpath
+
+# Spezifisches Paket
+java -jar .tools/junit-platform-console-standalone-6.0.0.jar \
+  --classpath bin \
+  --select-package progra25.aufgabeNN
+
+# Spezifische Klasse
+java -jar . tools/junit-platform-console-standalone-6.0.0.jar \
+  --classpath bin \
+  --select-class progra25.aufgabeNN.BestimmteKlassenName
+
+# Spezifische Methode
+java -jar .tools/junit-platform-console-standalone-6.0.0.jar \
+  --classpath bin \
+  --select-method progra25.aufgabeNN.BestimmteKlassenName#testExample
 ```
-
-```powershell
-$v = "6.0.0"
-New-Item -ItemType Directory -Force .tools | Out-Null
-Invoke-WebRequest -Uri "https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/$v/junit-platform-console-standalone-$v.jar" `
-  -OutFile ".\ .tools\junit-platform-console-standalone-$v.jar"
-
-```
-
-Tests bei `tests/java/progra25/blattNN/aufgabeNN/AppTest.java` ablegen.
-
-Tests lokal ausführen:
-1) Einmalig Skript ausführbar machen:
-   ```
-   chmod +x scripts/test_java.sh
-   ```
-2) Tests starten (wählbar):
-   ```
-   # Alle Tests
-   ./scripts/test_java.sh
-    # Klasse
-    ./scripts/test_java.sh --select-class progra25.blattNN.AppTest
-    # Paket
-    ./scripts/test_java.sh --select-package progra25.blattNN
-    # Muster
-    ./scripts/test_java.sh --include-classname '.*Calculator.*'
-   ```
-
-Runner script: [scripts/test_java.sh](../scripts/test_java.sh)  
-- Kompiliert alles unter `src/java/**` und `tests/java/**`
 
 Mehr Details: siehe [junit.org](https://junit.org/).
 
