@@ -17,16 +17,16 @@
 ```
 docs/                  # Theorie-Antworten, Begründungen, ggf. Beweise (eine Datei je Aufgabe)
 src/{Sprache}/         # Lösungen (Ordner je Aufgabe) Falls es OOP ist, dann die Pakete für Aufgaben angeben
-tests/                 # Testfälle, Beispieldaten, QuickChecks, Property-Tests
+tests/{Sprache}/       # Testfälle, Beispieldaten, QuickChecks, Property-Tests
 scripts/               # Skript-Dateien, um Tests mit CLI durchzuführen
 ```
 
-Beispiel for Java `src/`: `src/java/prograNN/blattNN/aufgabe01` (wichtig für Tests)
+Beispiel for Java `src/`: `src/java/progra25/aufgabeNN` (wichtig für Tests und Scripts)
 
 ## Konventionen
 - Pro Aufgabe:
   - Theorie: docs/aufgabe{NN}.md
-  - Code: src/{sprache}/aufgabe{NN}/…
+  - Code: src/{sprache}/progra25/aufgabe{NN}/…
 - Commit-Nachrichten exakt (feat, fix, docs, refactor, test).
 - Nutzt Branches und Pull Requests für Reviews (Opt.).
 
@@ -44,7 +44,7 @@ Zeurst aktiviere die Shell scripts fürs Ausführen:
 chmod +x scripts/*
 ```
 
-Stell sicher, dass die README.md richtig eingestellt ist (besonders die Aufgabentabelle) und starte Build von Projekt-Struktur :
+Stell sicher, dass README.md richtig eingestellt ist (besonders die Aufgabentabelle) und starte Build von Projekt-Struktur :
 ```sh
 ./scripts/create_structure.sh
 ```
