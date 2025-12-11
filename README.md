@@ -50,6 +50,7 @@ Stell sicher, dass README.md richtig eingestellt ist (besonders die Aufgabentabe
 ```
 
 Stell sicher, dass die Logische Struktur von den Klassen richtig ist (ja, du musst die selbst erstellen). Dann:
+Vergiss nicht die Hilfsfunktionen in `src/java/utils` zu laden, nicht in die Aufgabe selbst.
 ```sh
 ./scripts/create_tests.sh
 ```
