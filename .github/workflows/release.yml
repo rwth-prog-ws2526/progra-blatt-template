@@ -18,8 +18,11 @@ jobs:
         run: |
           name=$(basename "$PWD")
           num="${name##*[!0-9]}"
-          sed -i '/package rwth25.progra;/d' src/java/rwth25/progra/aufgabe*/*.java
-          zip "HA${num}_(Volkov,_Malzew)" src/java/rwth25/progra/aufgabe*/*.java
+          TARGET="HA${num}_Volkov_Malzew"
+          mkdir "$TARGET"
+          cp -r src/java/progra25/aufgabe* "$TARGET"
+          sed -i "/package progra25.aufgabe.*;/d" "$TARGET"/aufgabe*/*.java
+          zip -r "$TARGET.zip" "$TARGET"
 
       - name: Create Release with Auto-Generated Notes
         uses: softprops/action-gh-release@v1
