@@ -32,6 +32,8 @@ Beispiel for Java `src/`: `src/java/progra25/aufgabeNN` (wichtig für Tests und 
 
 ## Vorbereiten
 
+! Wir haben auch ein Release-Funktion, dass erlaubt zip ab sofort zu erstellen, siehe `.github/workflows/release.yaml` !
+
 ### Java (standalone)
 
 Die Arbeitsweise erfolgt nach der Logik "Tests First". 
@@ -170,6 +172,12 @@ git status
    ```bash
    git checkout main
    git pull
+   ```
+
+7. **Release erstellen!**
+ ```bash
+  git tag -a v1.0.0 -m "Initial stable release"
+  git push origin v1.0.0
    ```
 
 ### Häufige Git-Befehle
