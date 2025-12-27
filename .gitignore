@@ -6,6 +6,9 @@
 hs_err_pid*
 replay_pid*
 
+# --- Java Classes ---
+bin/
+
 # --- jUnit ---
 .tools/
 
