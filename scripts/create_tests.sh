@@ -18,7 +18,7 @@ for aufgabe_dir in src/java/progra25/aufgabe*/; do
     aufgabe_num=$(echo "$aufgabe_name" | sed 's/aufgabe//')
     
     # Get list of Java classes in aufgabe
-    java_files=$(ls "${aufgabe_dir}"*. java 2>/dev/null)
+    java_files=$(ls "${aufgabe_dir}"*.java 2>/dev/null)
     
     if [ -z "$java_files" ]; then
         echo "Skipping $aufgabe_name (no Java files)"
