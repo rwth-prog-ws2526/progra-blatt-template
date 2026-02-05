@@ -8,10 +8,10 @@ Abgabe bis: Donnerstag, den {TT.MM.JJJJ}, um 14 Uhr
 
 ## Aufgabenübersicht und Punkte
 
-| Aufgabe | Thema                         | Punkte | Code noetig |
-|--------:|-------------------------------|--------|-------------|
-| 01      | {Thema}                       |  {..}  |     y/n     |
-| 02      | {Thema}                       |  {..}  |     y/n     |
+| Aufgabe | Thema                         | Punkte | Code noetig | Sprache       |
+|--------:|-------------------------------|--------|-------------|---------------|
+| 01      | {Thema}                       |  {..}  |     y/n     |     j/h/p     |
+| 02      | {Thema}                       |  {..}  |     y/n     |     j/h/p     |
 
 ## Repository-Struktur
 ```
