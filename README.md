@@ -36,6 +36,8 @@ Beispiel for Java `src/`: `src/java/progra25/aufgabeNN` (wichtig für Tests und 
 
 ### Java (standalone)
 
+If not installed: [https://sdkman.io/](https://sdkman.io/).
+
 Die Arbeitsweise erfolgt nach der Logik "Tests First". 
 Es wird die Reiehe von shell Skripten ausgeführtm um die endliche Struktur zu erstellen.
 
@@ -101,11 +103,11 @@ Mehr Details: siehe [junit.org](https://junit.org/).
 
 ### Haskell 
 
-{...}
+If not installed: [https://www.haskell.org/ghcup/](https://www.haskell.org/ghcup/).
 
 ### Prolog
 
-{...}
+If not installed: [https://www.swi-prolog.org/Download.html](https://www.swi-prolog.org/Download.html)
 
 ## Voraussetzungen
 
